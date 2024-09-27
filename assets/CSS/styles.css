@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+    /* ### Neutral */
+
+    --Light-Grayish-Cyan-Background: hsl(180, 86%, 92%);
+    --Light-Grayish-Cyan-Filter-Tablets: hsl(180, 100%, 98%);
+    --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+    --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--Light-Grayish-Cyan-Background);
+}
+
+/* ================
+nav :start
+================ */
+nav {
+    height: 150px;
+    width: 100%;
+    background-color: var(--Desaturated-Dark-Cyan);
+}
+
+.forDesk{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.forMob{
+    display: none;
+}
+.navImg{
+    height: 100%;
+}
+.navImg img {
+
+    height: 100%;
+    width: 100%;
+}
+
+/* ================
+nav :end
+================ */
+/* =================
+main :start
+================= */
+main {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.textArea{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textAreaChild{
+    border-radius: 6px;
+    width: 80%;
+    background-color: #fff;
+    padding-block: 20px;
+    padding-inline: 30px;
+    position: relative;
+    height:auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+    top: -50px;
+}
+.mainChild {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+    width: 80%;
+}
+.parentFilter{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.clear{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear p{
+    color: var(--Desaturated-Dark-Cyan);
+    text-decoration: underline;
+}
+.clear p:hover{
+color: var(--Very-Dark-Grayish-Cyan);
+}
+
+/* ==============
+item style
+============== */
+.items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.116);
+    background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+}
+
+.itemLogo {
+    height: 70px;
+    width: 70px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.itemLogo img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.detail {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.timingsData {
+    display: flex;
+    gap: 30px;
+    color: var(--Dark-Grayish-Cyan);
+    font-weight: 500;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--Dark-Grayish-Cyan);
+}
+
+.jobTitle h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.skills {
+    width: 40%;
+}
+
+.brandName {
+    color: var(--Desaturated-Dark-Cyan);
+    font-weight: 600;
+}
+
+.btnNew button,
+.btnFeature button {
+    cursor: pointer;
+    padding-block: 7px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    /* font-size: small; */
+    text-transform: uppercase;
+    font-family: "League Spartan", sans-serif;
+}
+
+.btnNew button {
+    background-color: var(--Desaturated-Dark-Cyan);
+}
+
+.btnFeature button {
+    background-color: var(--Very-Dark-Grayish-Cyan);
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.btnSkills {
+    padding-inline: 10px;
+    padding-block: 8px;
+    cursor: pointer;
+    background-color: hsla(180, 29%, 50%, 0.171);
+    color: var(--Desaturated-Dark-Cyan);
+    border: none;
+    outline: none;
+    /* color: #fff; */
+    border-radius: 4px;
+    font-size: .9rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+}
+
+.btnSkills:hover {
+    background-color: var(--Desaturated-Dark-Cyan);
+    color: #fff;
+}
+
+.jobTitle h2 {
+    color: var(--Very-Dark-Grayish-Cyan);
+   
+}
+.jobTitle h2:hover {
+    cursor: pointer;
+    /* color: var(--Very-Dark-Grayish-Cyan); */
+    color: var(--Desaturated-Dark-Cyan);
+   
+}
+
+@media (min-width:766px) and (max-width:1025px) {
+    .skills {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .detail {
+        width: auto;
+    }
+}
+
+@media(max-width:740px) {
+    body{
+        gap: 15px;
+    }
+    .mainChild {
+        padding-block: 50px;
+        gap: 50px;
+        width: 90%;
+    }
+.forMob{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.forDesk{
+    display: none;
+}
+    .items {
+        padding-top: 40px;
+        position: relative;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 100%;
+        gap: 20px;
+        justify-content: start;
+    }
+
+    .itemLogo {
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        /* width: 100%; */
+    }
+
+    .itemLogo img {
+        height: 75%;
+        width: auto;
+    }
+
+    .detail {
+        width: 100%;
+        gap: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    }
+    .jobTitle h2{
+        font-size: 1rem;
+    }
+    .brand{
+        gap: 15px;
+    }
+    .brandName{
+        font-size: .9rem;
+    }
+.btnFeature button,.btnNew button{
+    font-size: .6rem;
+}
+.timingsData{
+    gap: 10px;
+}
+.textAreaChild{
+    width: 90%;
+    padding: 15px;
+
+}
+.itemFilter{
+    font-size: small;
+}
+}
+@media(max-width:320px){
+    .timingsData{
+        font-size: .7rem;
+    }
+    .items{
+        padding: 15px;
+        padding-top: 50px;
+    }
+}
+/* ==============
+item end
+============== */
+.filters{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+.itemFilter{
+    text-transform: uppercase;
+    background-color: hsla(180, 29%, 50%, 0.171);
+    padding: 10px;
+    color: var(--Desaturated-Dark-Cyan);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeImg{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Desaturated-Dark-Cyan);
+}
+.closeImg:hover{
+    background-color: var(--Very-Dark-Grayish-Cyan);
+    cursor: pointer;
+}
+/* =================
+main :end
+================= */
+.none{
+    display: none;
+}
